@@ -5,4 +5,5 @@ gem 'serverspec'
 gem 'rake'
 gem 'guard'
 gem 'guard-rspec'
+gem 'ci_reporter'
 

@@ -10,7 +10,7 @@ describe service('nginx') do
 end
 
 describe port(80) do
-	it { should _be_listening }
+	it { should be_listening }
 end
 
 describe file('/etc/nginx/nginx.conf') do

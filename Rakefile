@@ -1,7 +1,8 @@
 require 'rake'
 require 'rspec/core/rake_task'
+require 'ci/reporter/rake/rspec'
 
-#task :spec    => 'spec:all'
+task :spec    => 'spec:all'
 task :default => :spec
 
 namespace :spec do
@@ -12,7 +13,7 @@ namespace :spec do
   end
 
   task :all     => targets
-  task :default => :all
+  #task :default => :all
 
   targets.each do |target|
     desc "Run serverspec tests to #{target}"

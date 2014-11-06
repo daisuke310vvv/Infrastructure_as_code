@@ -1,11 +1,9 @@
 {
-  "httpd": {
-	"port": 80
-  },
   "run_list": [
-	"recipe[base_packages]",
-	"recipe[httpd]",
-	"recipe[iptables]"
+	"recipe[yum-epel]",
+	"recipe[nginx]",
+	"recipe[ntp]",
+	"recipe[user]"
   ],
   "automatic": {
     "ipaddress": "dsk"
