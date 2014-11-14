@@ -13,3 +13,14 @@
 	end
 end
 
+#vim
+package "vim-enhanced" do
+	action :install
+end
+
+# dotfiles
+git "/home/dsk/dotfiles" do
+	repository "https://github.com/daisuke310vvv/dotfiles.git"
+	user node[:user]
+	group node[:user]
+end
